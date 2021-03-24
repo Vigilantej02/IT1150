@@ -1,0 +1,115 @@
+<html id=html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Press+Start+2P&family=Reggae+One&display=swap" rel="stylesheet">     
+<!--
+    putting these here because i can never remember how to write the font-family elements
+    font-family: 'Bungee', cursive;
+
+    font-family: 'Press Start 2P', cursive;
+
+    font-family: 'Reggae One', cursive; -->
+<style>
+#html{
+    background-image: url(images/pagebackground.jpg);
+    text-align: center;
+}
+#body{
+
+}
+#header{
+    font-family: 'Reggae One', cursive;
+    font-weight: bolder;
+    font-size: 48px;
+}
+#footer{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+}
+#button{
+    font-family: 'Bungee', cursive;
+    font-size: 36px;
+    height: flex;
+    width: 30%;
+    background-image: url(images/buttonbackground.jpg);
+    background-size: 256px;
+}
+#button:hover{
+    font-family: 'Bungee', cursive;
+    font-size: 48px;
+    width: 40%;
+}
+#lootPicture{
+
+}
+</style>
+
+<title>Jay's Loot Roller</title>
+    <body id=body>
+        <header id=header>
+            <h1>Jay's Loot Roller</h1><br>
+            <p>Roll your totally not generic RPG loot here!</p>
+        </header>
+        <div id=lootPicture>
+
+        </div>
+            <p>
+                <button id=button onclick=displayLoot();>Roll Your Loot</button>
+            </p>
+        <footer id=footer>    
+        </footer>  
+    </body>
+<script>
+// Declaring my array of images I will use to show what loot you rolled
+var lootArray = new Array();
+//adding my images to the array. 
+//Is there an easier way to do this? or is this ugly
+//block of code the best its gonna get?
+lootArray[0] = new Image();
+lootArray[0].src = 'LootImages/sword1.png';
+
+lootArray[1] = new Image();
+lootArray[1].src = 'LootImages/sword2.png';
+
+lootArray[2] = new Image();
+lootArray[2].src = 'LootImages/sword3.png';
+
+lootArray[3] = new Image();
+lootArray[3].src = 'LootImages/sword4.png';
+
+lootArray[4] = new Image();
+lootArray[4].src = 'LootImages/sword5.png';
+
+//Method used to actually display the image itself
+function imageDisplay(rngValue){
+    var img = document.createElement("img");
+    img.src = img;
+    document.body.appendChild(img);
+}
+//Method to display whatever loot was rolled
+function displayLoot(){
+    switch (rollLoot()) {
+        case rngValue = 1:
+            imageDisplay(lootArray[0]);
+            break;
+        case rngValue = 2:
+            imageDisplay(lootArray[1]);
+            break;
+        case rngValue = 3:
+            imageDisplay(lootArray[2]);
+            break;
+        case rngValue = 4:
+            imageDisplay(lootArray[3]);
+            break;
+        case rngValue = 5:
+            imageDisplay(lootArray[4]);
+            break;
+        default:
+            break;
+    }
+}
+//RNG Method
+function rollLoot(){
+    return rngValue = Math.floor(Math.random() * (5 - 1) ) + 1;  
+}
+</script>
+<html>
