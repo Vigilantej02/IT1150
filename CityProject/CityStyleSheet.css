@@ -1,0 +1,142 @@
+/* the file name just worked out like that, i swear */
+/* yeah yeah yeah I know VS, Don't put empty styles, whatever */
+/*    font-family: 'Lobster', cursive;
+
+    font-family: 'New Tegomin', serif;
+
+    font-family: 'Original Surfer', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=New+Tegomin&family=Original+Surfer&display=swap');
+@media only screen and (min-width: 600px)
+{
+  #main
+  {
+    font-family: 'New Tegomin', serif;
+  }
+  #h1
+  {
+    font-family: 'Lobster', cursive;
+    font-size: 10vh;
+  } 
+  #h3
+  {
+    font-family: 'Lobster', cursive;
+  }
+  #h4
+  {
+    font-family: 'Lobster', cursive;
+  }
+  #unsettling-text
+  {
+    
+  }
+  #nav-bar
+  {
+    font-size: 5vh;
+  }
+  #body
+  {
+
+  }
+  #townDescription
+  {
+
+  }
+  #p
+  {
+
+  }
+  #history-section
+  {
+
+  }
+}
+#html
+  {
+    background-color: #845460;
+  }
+  #main
+  {
+    background-color: #ead3cb;
+  }
+  #header
+  {
+    
+  }
+  #h1
+  {
+    padding-top: 10vh;
+  } 
+  #h3
+  {
+
+  }
+  #h4
+  {
+
+  }
+  #unsettling-text
+  {
+    
+  }
+  #nav-bar
+  {
+  background-color: #bdc7c9;
+  }
+  #body
+  {
+
+  }
+  #townDescription
+  {
+
+  }
+  #pageFooter
+  {
+    background-color: #2b4f60;
+  }
+  #p
+  {
+    font-family: 'New Tegomin', serif;
+  }
+  #history-section
+  {
+
+  }
+  .dropbtn {
+    background-color: #57260a;
+    color: #98afab;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown 
+  {
+    position: fixed;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
