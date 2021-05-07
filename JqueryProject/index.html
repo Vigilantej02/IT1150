@@ -1,0 +1,140 @@
+<html id=html>
+    <!--    just needed somewhere to put these, will move later.
+    font-family: 'Cutive Mono', monospace;
+
+    font-family: 'Major Mono Display', monospace;
+
+    font-family: 'Press Start 2P', cursive;
+
+    font-family: 'Share Tech Mono', monospace;
+
+    font-family: 'Zen Dots', cursive;
+    --manatee: #8e9aafff;
+--languid-lavender: #cbc0d3ff;
+--pale-pink: #efd3d7ff;
+--pale-purple-pantone: #feeafaff;
+--lavender-web: #dee2ffff;
+    -->
+<link href="JQStyleSheet.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&family=Press+Start+2P&family=Share+Tech+Mono&family=Zen+Dots&display=swap" rel="stylesheet"> 
+<Title>JV Jquery Project</Title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+     function switchParagraph()
+     {
+        while(value="ietf")
+        {
+            displayIetf();
+        }
+        while(value="icann")
+        {
+            displayIcann();
+        }
+        while(value="w3c")
+        {
+            displayW3c();
+        }
+     }
+     function displayIetf()
+     {
+        $("#icann").hide();
+        $("#w3c").hide();
+        $("#ietf").show();
+     }
+     function displayIcann()
+     {
+        $("#w3c").hide();
+        $("#ietf").hide();
+        $("#icann").show();
+     }   
+     function displayW3c()
+     {
+        $("#icann").hide();
+        $("#ietf").hide();
+        $("#w3c").show();
+     }
+       
+    </script>
+ <main id=main>
+     <nav id=nav>
+        <input type="radio" id="ietf" name="display" value="ietf" onclick=switchParagraph();>
+        <label for ="ietf">IETF</label>
+        <input type="radio" id="icann" name="display" value="icann">
+        <label for ="icann">ICANN</label>
+        <input type="radio" id="w3c" name="display" value="w3c">
+        <label for ="icann">W3C</label>
+     </nav>
+     <header id=header>
+
+     </header>
+     <body id=body>
+        <section id=ietf>
+            <h3 id=h3>
+                What is the IETF?
+            </h3>
+            <p id= ietf-p>
+                The Internet Engineering Task Force (IETF) is a large open international community of 
+                network designers, operators, vendors, and researchers concerned with the evolution 
+                of the Internet architecture and the smooth operation of the Internet.
+            </p>
+            <br>
+            <h3 id=h3>
+                What is the IETF's mission?
+            </h3>
+            <P id=ietf-p>
+                The mission of the IETF is to make the Internet work better by producing high quality, 
+                relevant technical documents that influence the way people design, use, and manage the Internet.
+            </p>
+            <br>
+        </section>
+        <section id=icann>
+            <h3 id=h3>
+                What is ICann?
+            </h3>
+            <p id=icann-p> <!-- heheh...i can pee-->
+                ICann is a not-for-profit public-benefit corporation with participants from all over the world 
+                dedicated to keeping the Internet secure, stable and interoperable. 
+                It promotes competition and develops policy on the Internet's unique identifiers. 
+                Through its coordination role of the Internet's naming system, 
+                it does have an important impact on the expansion and evolution of the Internet.
+            </p>
+            <br>
+            <h3 id=h3>
+                What is ICANN's mission?
+            </h3>
+            <p id=icann-p>
+                ICANN develops policies relating to the naming conventions encompassing the internet.   
+            </p>
+            <br>
+        </section>
+        <section id=w3c>
+            <h3 id=h3>
+                What is the W3C?
+            </h3>
+            <p id=w3c-p>
+                The World Wide Web Consortium (W3C) is an international community where 
+                Member organizations, a full-time staff, and the public work together to 
+                develop Web standards. The organization is led by Web inventor and
+                Director Tim Berners-Lee and CEO Jeffrey Jaffe. W3C's primary activity is to develop 
+                protocols and guidelines that ensure long-term growth for the Web. 
+                W3C's standards define key parts of what makes the World Wide Web work
+            </p>
+            <br>
+            <h3 id=h3>
+                What is the W3C's mission?
+            </h3>
+            <p id=w3c-p>
+                The W3C mission is to lead the World Wide Web to its full potential by 
+                developing protocols and guidelines that ensure the long-term growth of the Web. 
+                Below we discuss important aspects of this mission, all of which further W3C's 
+                vision of One Web.
+            </p>
+            <br>
+        </section>
+     </body>
+     <footer id=footer>
+
+     </footer>
+ </main>   
+</html>

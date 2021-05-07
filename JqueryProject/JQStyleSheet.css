@@ -1,0 +1,40 @@
+#html
+{
+    background-color: #8e9aafff
+}
+#nav
+{
+    background-color:#dee2ffff
+}
+#ietf
+{
+    background-color: #cbc0d3ff;
+}
+#h3
+{
+    font-family: 'Press Start 2P', cursive;
+}
+#ietf-p
+{
+    font-family: 'Share Tech Mono', monospace;
+}
+#icann
+{
+    background-color: #efd3d7ff;
+}
+#icann-p
+{
+    font-family: 'Major Mono Display', monospace;
+}
+#w3c
+{
+    background-color: #feeafaff;
+}
+#w3c-p
+{
+    font-family: 'Cutive Mono', monospace;
+}
+#footer
+{
+    background-color: #dee2ffff;
+}
